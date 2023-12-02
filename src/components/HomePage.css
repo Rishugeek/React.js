@@ -1,0 +1,75 @@
+p{
+    font-weight: 300;
+    color: blueviolet;
+  }
+  
+  .banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../assetss/homepage-drone-fall-hero.jpg.webp");
+    background-size: cover;
+    background-blend-mode:hue;
+  }
+  
+  .banner .content{
+    height: 200px;
+    max-width: 900px;
+    text-align: center;
+    backdrop-filter: invert(10%);
+  }   
+  
+  .banner .content h2{
+    font-size: 3rem;
+    color: whitesmoke;
+  }
+  
+  .banner .content p{
+    font-size: 1rem;
+    color: whitesmoke;
+  }
+  
+  .btn{
+    font-size: 1rem;
+    color: white;
+    background-color: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover{
+    letter-spacing: 6px;
+  }
+  
+  @media (max-width:800px){
+    .banner{
+      align-items: normal;
+  
+      margin: 0%;
+      padding: 50% 7%;
+    }
+    .banner .content{
+      height: 200px;
+      max-width: 900px;
+      text-align: center;
+      backdrop-filter: invert(10%);
+    }   
+    
+    .banner .content h2{
+      font-size: 2rem;
+      color: whitesmoke;
+    }
+    
+    .banner .content p{
+      font-size: 1rem;
+      color: whitesmoke;
+    }
+  }

@@ -1,0 +1,120 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5% 5% ;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #111;
+  }
+  .fa-solid.fa-bars{
+    display: none;
+  }
+  header.sticky{
+    background-color: blueviolet;
+    padding: 0.5% 10%;
+    box-shadow: 0 5px 20px rgba(241, 229, 229, 0.05);
+  }
+  header .logo{
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  
+  header.sticky .logo{
+    color: #111;
+  
+  }
+  
+  header .logo span{
+    color: #ff0157; 
+  }
+  
+  header .navigation{
+    position: relative;
+    display: flex;
+  }
+  
+  header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  header .navigation li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+  }
+  
+  header.sticky .navigation li a{
+    color: #111;
+  }
+  
+  header .navigation li a:hover{
+    color: #ff0157;
+    font-weight: 900;
+    font-size: medium;
+    transition: 0.2s;
+  }
+  section{
+    padding: 100px;
+  }
+  
+  .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row .col50{
+    position: relative;
+    width: 48%;
+  }
+
+  @media (max-width: 800px) {
+    header{
+      position: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1% 5% ;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+      background-color: #111;
+    }
+    .fa-solid.fa-bars{
+      display: block;
+    }
+    header .logo{
+      color: white;
+      font-weight: 700;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    header .logo.fix{
+      position: fixed;
+    }
+    header .navigation{
+      position: relative;
+      display: none;
+    }
+    header .navigation.show{
+      position: relative;
+      display: block;
+    }
+    header .sticky{
+      background-color: blueviolet;
+      padding: 0.5% 6%;
+      box-shadow: 0 5px 20px rgba(241, 229, 229, 0.05);
+    }
+  }

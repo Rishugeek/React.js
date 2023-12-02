@@ -1,0 +1,36 @@
+.about{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./../assetss/clay-banks-z_DkoUqgx6M-unsplash.jpg");
+    background-size: cover;
+}
+.container{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    z-index: 1;
+    transform: translateY(100px);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container:hover{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.Professors{
+    font-size:3rem;
+    color: whitesmoke; 
+    backdrop-filter: blur(5px); 
+    display: block; 
+    width: 500px;
+    font-family: "Nunito",sans-serif;
+    background: transparent;   
+}
