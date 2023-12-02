@@ -3,6 +3,7 @@ var VanillaTilt = (function () {
 class VanillaTilt {
   constructor(element, settings = {}) {
     if (!(element instanceof Node)) {
+    // eslint-disable-next-line
       throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
     }
 

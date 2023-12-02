@@ -8,14 +8,14 @@ import "./CardSec.css"
     
 
 
-export default function About(){
+export default function CardSec(){
     return(<>
-    <section className="about" id="about">
+    <section className="about" id="about" >
         <div className="row">
-            <div className="col50">
+            <div className="col50" >
 
-                <h1><span className="Professors">PAVING THE WAY</span></h1>
-                <br/>
+                <div className="H1"><span className="Professors">PAVING THE WAY</span></div>
+                
                 <div className="container">
                 <Card image={img1} heading1="01" heading2="Card1"/>
                 <Card image={img2} heading1="02" heading2="Card2"/>

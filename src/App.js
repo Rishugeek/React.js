@@ -3,22 +3,6 @@ import Home from './components/homePage';
 import Navbar from './components/navbar';
 import About from './components/aboutPage';
 import ErrorPage from './components/errorPage';
-import VanillaTilt from "./components/vanilla-tilt";
-function tilt(){
-    var l=document.getElementsByClassName("card2");
-    for (let index = 0; index < l.length; index++) {
-        const element = l[index];
-        
-            VanillaTilt.init(element, {
-                max: 25,
-                speed: 400,
-                glare: true,
-                "max-glare":1,
-            });
-        
-        
-    }
-}
 function App() {
   
   let components;
@@ -40,7 +24,7 @@ function App() {
     <div className="App">
       <Navbar/>
       {components}
-      {tilt()}
+      
      
     </div></>
   );

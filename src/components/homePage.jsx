@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css"
-import About from "./cardSec";
+import CardSec from "./cardSec";
 export default function Home(){
     return(<>
     <section className="banner" id="banner">
@@ -12,7 +12,7 @@ export default function Home(){
           <a href="/" className="btn">Explore More</a>
         </div>
       </section>
-      <About/>
+      <CardSec/>
       </>
     );
 }
