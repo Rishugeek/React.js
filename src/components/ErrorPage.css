@@ -1,7 +1,18 @@
 .error{
     position: relative;
-    top: 120px;
-    left:45%;
-   
-   
+    justify-content: center;
+    align-items: center;
+    
+}
+.cont{
+    position: absolute;
+    top: 20%;
+    left: 37%;
+}
+@media (max-width:800px){
+    .cont{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
 }

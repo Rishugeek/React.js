@@ -9,7 +9,7 @@ export default function Home(){
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium praesentium tempore id incidunt
             quaerat doloribus cupiditate repudiandae, laborum, sapiente consequuntur nihil. Officiis explicabo quae
             doloremque veritatis nesciunt ad dolor doloribus?</p>
-          <a href="/" className="btn">Explore More</a>
+          <a href="/academics" className="btn">Explore More</a>
         </div>
       </section>
       <CardSec/>
