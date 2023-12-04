@@ -5,15 +5,13 @@
     padding-top: 5%;
     min-height: 110vh;
     width: 100%;
-    background-image: url("./../assetss/clay-banks-z_DkoUqgx6M-unsplash.jpg");
+    background-image: url("./../assetss/adam-mechedal-iWmfPbKmxEQ-unsplash.jpg");
     background-size: cover;
 }
 .container{
     position: relative;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10%;
+    
     z-index: 1;
     transform: translateY(100px);
     opacity: 1;
@@ -44,7 +42,7 @@
     .container{
         display: block;
         z-index: 1;
-        padding-left: 37%;
+        
     }
     .Professors{
         font-size:2rem;
@@ -71,7 +69,7 @@
     .container{
         display: block;
         z-index: 1;
-        padding-left: 2%;
+        
        
     }
     .Professors{

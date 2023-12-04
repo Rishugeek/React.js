@@ -1,0 +1,135 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("./../assetss/adam-mechedal-iWmfPbKmxEQ-unsplash.jpg");
+    backdrop-filter: blur(10px);
+    background-color: #111;
+    background-size: cover;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.bg h1{
+    font-size: 4em;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.UGcard{
+    position: relative;
+    display: flex;
+    width:300px;
+    height: 400px;
+    background-color: white;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 5px 5px 5px rgba(141, 86, 86, 0.25);
+    transition: 1s;
+    /* flex-wrap: wrap; */
+    margin: 75px;
+    /* z-index: 100; */
+   
+}
+.UGcard:hover{
+    transform: translateX(50%);
+    transition: 0.5s;
+    
+}
+.UGcard .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    /* background: #111; */
+    transition: 1s;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+    background-blend-mode: hue;
+}
+.UGcard:hover .imgBox{
+    transform: rotateY(-180deg);
+    background-size: cover;
+    transition: 0.5s;
+}
+.UGcard .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.UGcard .imgBox img:nth-child(2){
+    transform: rotateY(-180deg);
+}
+.UGcard .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.UGcard .details .con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    transition: 0.5s;
+}
+.UGcard .details .con h2{
+    text-align:center;
+    font-weight: 600;
+    line-height: 1rem;
+}
+.con p{
+    font-size: small;
+}
+.btn{
+    font-size: 0.75rem;
+    color: white;
+    background-color: #ff0157;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+@media (max-width:450px) {
+    .UGcard{
+        position: relative;
+        display: block;
+        width:300px;
+        height: 400px;
+        background-color: white;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        box-shadow: 5px 5px 5px rgba(141, 86, 86, 0.25);
+        transition: 1s;
+        /* flex-wrap: wrap; */
+        /* z-index: 100; */
+       
+    }
+    .UGcard:hover{
+        transform: translateX(50%);
+        transition: 0.5s;
+        width: 200px;
+    }
+}

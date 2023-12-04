@@ -15,12 +15,12 @@ export default function CardSec(){
             <div className="col50" >
 
                 <div className="H1"><span className="Professors">PAVING THE WAY</span></div>
-                
+                <center>
                 <div className="container">
                 <Card image={img1} heading1="01" heading2="Card1"/>
                 <Card image={img2} heading1="02" heading2="Card2"/>
                 <Card image={img3} heading1="03" heading2="Card3"/>
-                </div>
+                </div></center>
             </div>
             <div className="imgBx">
                 
