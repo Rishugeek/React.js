@@ -9,7 +9,7 @@ import "./ProgramsSec.css"
 export default function ProgramsSec() {
   return (
   <section className="bg">
-    <h1>ProGRamS @ weBBers</h1>
+    <div className='programTitle'>ProGRamS @ weBBers</div>
     <br/>
     <p style={{color:"white"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis sapiente earum doloremque, ducimus quo nesciunt non, excepturi incidunt exercitationem ab quidem pariatur. Laborum assumenda deserunt cumque. Obcaecati dolores placeat quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum nobis inventore ut laborum saepe, possimus pariatur voluptas exercitationem, perferendis provident dignissimos veritatis itaque necessitatibus quibusdam sint, autem sunt dolor.</p>
     <div className="holder">

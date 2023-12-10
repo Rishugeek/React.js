@@ -1,4 +1,6 @@
-
+body {
+  background: url("./../assetss/adam-mechedal-iWmfPbKmxEQ-unsplash.jpg");
+}
 .homePageText{
     font-weight: 300;
     color: blueviolet;
@@ -33,7 +35,7 @@
     color: whitesmoke;
   }
   
-  .btn{
+  .Hbtn{
     font-size: 1rem;
     color: white;
     background-color: #ff0157;
@@ -46,7 +48,7 @@
     transition: 0.5s;
   }
   
-  .btn:hover{
+  .Hbtn:hover{
     letter-spacing: 6px;
   }
   
