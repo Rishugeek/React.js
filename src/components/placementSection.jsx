@@ -19,9 +19,9 @@ export default function PlacementSection() {
         </div>
     </div>
     
-    <div className="CARD">
-        <div className="face face1">
-            <div className="content1">
+    <div className="CARD" >
+        <div className="face face1" >
+            <div className="content1" >
                 <h3>SAMSUNG</h3>
             </div>
         </div>

@@ -5,6 +5,7 @@ import ProgramsSec from "./programsSec";
 import PlacementSection from "./placementSection";
 export default function Home(){
     return(<>
+    
     <section className="banner" id="banner">
         <div className="content">
           <h2>"Where Learning Meets Excellence"</h2><br/>
