@@ -1,0 +1,13 @@
+.placementsPage{
+    padding-top: 10%;
+}
+@media (max-width:700px) {
+    .placementsPage{
+        padding-top: 20%;
+    }
+}
+@media (max-width:400px) {
+    .placementsPage{
+        padding-top: 30%;
+    }
+}
