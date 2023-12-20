@@ -1,40 +1,41 @@
-import React , { useState}from "react";
+import React,{useState} from "react";
 import "./Navbar.css"
-function val(){
-    window.addEventListener('scroll',function(){
-        const header = document.querySelector('header');
-        header.classList.toggle("sticky",window.scrollY > 0);
-    });
-}
+
 
 export default function Navbar() {
+    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     
-    const [cls,setClose]=useState(true);
-    let f=()=>{
-        setClose(!cls);
-        let l=document.getElementsByClassName("navigation")[0];
 
-        if(cls){
-            l.classList.add("show");
-            
-        }
-        else{
-            l.classList.remove("show");
-            
-        }
-    };
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
     return (
-        <header>
-            {val()}
-            <a href="/" className="logo">weBBers<span>.</span></a>
-            <i className={cls?"fa-solid fa-bars":"fa-solid fa-xmark"}  onClick={f} style={{color:"white"}}></i>
-            <ul className="navigation">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/academics">Academics</a></li>
-                <li><a href="/placements">Placements</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-            </ul>
-        </header>
+        <>
+       
+            <nav className="navbar fixed-top navbar-expand-lg navbar-dark" style={{backgroundColor: "#111"}}>
+                <a className="navbar-brand" href="/" >weBBers<span>.</span></a>
+                <button className="navbar-toggler"  type="button" data-toggle="collapse" data-target="/navbarNav" aria-controls="navbarNav" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link" id="nav-links" href="/">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" id="nav-links" href="/about">About</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" id="nav-links" href="/academics">Academics</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" id="nav-links" href="/placements">Placements</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" id="nav-links" href="/contact">Contact Us</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </>
     )
 }

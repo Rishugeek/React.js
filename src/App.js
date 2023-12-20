@@ -7,6 +7,7 @@ import Contact from './components/contact';
 import FooterSec from './components/footerSec';
 import Preloader from './components/preloader';
 import { useEffect,useState } from 'react';
+import Academics from './components/academicsPage';
 function App() {
   const [loading, setLoading] = useState(false);
   const p=(loading)=>{
@@ -47,10 +48,18 @@ function App() {
       back=false;
       components=<About/>;
       break;
-      case "/contact":
+    case "/contact":
         back=true;
         components=<Contact back={back}/>;
         break;
+    case "/academics":
+          back=true;
+          components=<Academics/>;
+          break;
+    case "/placements":
+            back=true;
+            components=<Contact back={back}/>;
+            break;
     default:
       back=false;
       components=<ErrorPage/>

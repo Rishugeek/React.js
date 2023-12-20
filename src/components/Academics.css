@@ -1,0 +1,40 @@
+.academicsB{
+    
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    align-content: center
+    
+  }
+
+.acontent{
+    
+    color: white;
+    font-size: 4rem;
+    padding-top: 5%;
+}
+@media (max-width:700px){
+    .acontent{
+    
+        color: white;
+        font-size: 3rem;
+        padding-top: 5%;
+    }
+}
+@media (max-width:500px){
+    .acontent{
+    
+        color: white;
+        font-size: 3rem;
+        padding-top: 5%;
+        padding-left: 20%;
+    }
+}
+@media (max-width:350px){
+    .academicsB{
+        width: 350px;
+    }
+}

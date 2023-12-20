@@ -12,7 +12,7 @@ export default function Home(){
           <p className="homePageText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium praesentium tempore id incidunt
             quaerat doloribus cupiditate repudiandae, laborum, sapiente consequuntur nihil. Officiis explicabo quae
             doloremque veritatis nesciunt ad dolor doloribus?</p>
-          <a href="/academics" className="Hbtn">Explore More</a>
+          <a href="/about" className="Hbtn">Explore More</a>
         </div>
       </section>
       <CardSec/>

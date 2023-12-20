@@ -76,3 +76,10 @@ body {
       color: whitesmoke;
     }
   }
+  @media (max-width:350px){
+    .banner{
+        width: 350px;
+    }
+    
+    
+}

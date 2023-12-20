@@ -14,9 +14,9 @@ export default function CardSec(){
     
                 <div className="H1"><span className="Professors">PAVING THE WAY</span></div>
                 <div className="container">
-                <Card image={img1} heading1="01" heading2="Card1"/>
-                <Card image={img2} heading1="02" heading2="Card2"/>
-                <Card image={img3} heading1="03" heading2="Card3"/>
+                <Card image={img1} heading1="01" heading2="Principal"/>
+                <Card image={img2} heading1="02" heading2="Vice-Principal"/>
+                <Card image={img3} heading1="03" heading2="HOD"/>
                 </div>
             
     </section>
