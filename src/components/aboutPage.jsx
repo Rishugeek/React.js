@@ -3,8 +3,7 @@ import CardSec from "./cardSec";
 import "./About.css"
 export default function About(){
     return(<><section className="academicsB">
-    <div className="content">
-      <h2>"Where Learning Meets Excellence"</h2><br/>
+    <div className="acontent">"Where Learning Meets Excellence"
     </div>
   </section>
     <CardSec/></>
