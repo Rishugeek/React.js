@@ -5,14 +5,27 @@
     
 }
 .cont{
-    position: absolute;
-    top: 20%;
-    left: 37%;
+    color: white;
+    font-size: 4rem;
+    padding-top: 10%;
+    padding-left: 30%;
+    padding-bottom: 20%;
 }
 @media (max-width:800px){
     .cont{
-        position: absolute;
-        top: 30%;
-        left: 30%;
+        color: white;
+        font-size: 4rem;
+        padding-top: 20%;
+        padding-left: 30%;
+        padding-bottom: 30%;
+    }
+}
+@media (max-width:400px){
+    .cont{
+        color: white;
+        font-size: 3rem;
+        padding-top: 30%;
+        padding-left: 10%;
+        padding-bottom: 30%;
     }
 }
